@@ -162,7 +162,9 @@ ul li a{
     font-size:7px;
     margin-top: 5px;
 }
-
+button:hover{
+    cursor: pointer;
+}
 @media(max-width:650px){
     header{
         padding: 2em;
