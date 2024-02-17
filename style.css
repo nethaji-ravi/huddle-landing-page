@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+header{
+    background-image: url(images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    min-height: 100vh;
+    width: 100%;
+    background-color:hsl(193, 100%, 96%);
+    padding: 3em;
+}
+header .top1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+header .top2{
+    display:flex;
+    height: 100%;
+    align-items: center;
+}
+header .top2 .msg{
+    width: 30%;
+}
+.msg p{
+    padding: 1.5em 0;
+    font-size:18px;
+}
+header .top2 .msgimg{
+    padding: 1em;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+}
+header .top2 .msgimg img{
+    width: 100%;
+    object-fit: contain;
+    padding-bottom: 2em;
+}
+.getbtn1 {
+    color: #fff;
+    background:hsl(322, 100%, 66%);
+    padding: 20px 50px;
+    border: none;
+    border-radius:45px;
+}
+.trybtn{
+    color: #000;
+    background: #fff;
+    padding :10px 50px;
+    border: none;
+    border-radius:40px;
+    box-shadow:0px 0px 10px  rgba(0, 0, 0, 0.1)
+}
+.card1, .card2, .card3{
+    margin: 5em;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.growtogether,.flowing,.yourusers{
+    width: 60%;
+    padding: 7em;
+}
+.growtogether p,.flowing p,.yourusers p{
+    padding: 1em 0;
+    color: hsl(208, 11%, 55%);
+}
+.growimg,.flowimg,.usersimg{
+    width: 40%;
+}
+.growimg img,.flowimg img,.usersimg img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+}
+.card3{
+    margin: 5em 5em 15em 5em;
+}
+footer{
+    background: hsl(192, 100%, 9%);
+    color: #fff;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 10em 3em 3em 3em;
+    grid-template-columns:  2fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+ul li{
+list-style: none;
+margin-top: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.iconlocation{
+
+    background:url(images/icon-location.png);
+    background-size:contain;
+}
+.card{
+    position:absolute;
+    top: -140px;
+    margin: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    justify-self: center;
+    align-items: center;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.card button{
+    padding: 1.5em 4em;
+    border: none;
+    color:#fff ;
+    background: hsl(322, 100%, 66%);
+    margin: 2em 0 0 0;
+    border-radius:40px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
+}
+.cardholder{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+.icon{
+    display: flex;
+    align-items: start;
+}
+.icon img{
+    margin:15px 15px 0 0
+}
+
+.foot4 {
+    height: 100%;
+    padding: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.foot4 i{
+    margin: 5px;
+    justify-self: end;
+}
+.foot4 p{
+    font-size:7px;
+    margin-top: 5px;
+}
+
+@media(max-width:600px){
+    header{
+        padding: 2em;
+    }
+    
+    .trybtn{
+        padding: 3px 20px;
+    }
+    header .top2{
+        display: flex;
+        flex-direction: column;
+    }
+    header .top2 .msg{
+        width: 100%;
+        margin-top:4em;
+        text-align: center;
+    }
+    header .top2 .msgimg{
+        width:100%;
+        margin-top: 2em;
+    }
+    .card1,.card2, .card3{
+        display: flex;
+        flex-direction: column-reverse;
+        margin:5em 1.5em;
+        padding: 0;
+    }
+    .card2{
+        display: flex;
+        flex-direction: column;
+    }
+    .card1 .growtogether, .card2 .flowing ,.card3 .yourusers{
+        padding:1em;
+        text-align: center;
+        margin-top:2em;
+        width: 100%;
+    }
+    .card1 .growimg ,.card2 .flowimg , .card3 .usersimg{
+        margin-top:15px;
+        width: 70%;
+    }
+    .card{
+        padding:1.8em;
+        top: -80px;
+    }
+    .card h1{
+        font-size:0.8em;
+    }
+    .card button{
+        margin: 1em 0;
+        padding:1em 3em;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  2fr 1fr 1fr 1fr;
+        row-gap: 20px;
+
+    }
+    footer .foot4{
+        text-align: center;
+        height:auto;
+    }
+    .cname img,#logo-svg{
+        width: 30vw;
+    }
+    
+}
