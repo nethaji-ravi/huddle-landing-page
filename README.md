@@ -1,4 +1,4 @@
-#Visit this Page -> https://nethaji-ravi.github.io/huddle-landing-page/
+# Visit this Page -> https://nethaji-ravi.github.io/huddle-landing-page/
 
 # Frontend Mentor - Huddle landing page with alternating feature blocks
 
