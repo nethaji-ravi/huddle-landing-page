@@ -163,7 +163,7 @@ ul li a{
     margin-top: 5px;
 }
 
-@media(max-width:600px){
+@media(max-width:650px){
     header{
         padding: 2em;
     }
